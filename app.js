@@ -7,6 +7,7 @@ const dbUsername = 'souleyMongoDB'
 const dbPassword = 'Drsulaiman35'
 const dbURI = `mongodb+srv://${dbUsername}:${dbPassword}@${cluster}.zjd9u.mongodb.net/${dbName}?retryWrites=true&w=majority`
 const port = '3000'
+const bookRouter = require('./src/routes/book')
 
 app.use(express.json())
 
@@ -22,3 +23,5 @@ mongoose.connect(dbURI, (error) => {
     })
   }
 })
+
+app.use('/book', bookRouter)
