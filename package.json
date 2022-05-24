@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/SulaimanAminuBarkindo/SIMPLE_CRUD_IN_EXPRESS_MONGODB#readme",
   "devDependencies": {
+    "dotenv": "^16.0.1",
+    "dotenv-expand": "^8.0.3",
     "eslint": "^8.15.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
